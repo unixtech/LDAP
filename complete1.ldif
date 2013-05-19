@@ -1,0 +1,66 @@
+#LDIF Sample
+dn: dc=myhome,dc=internal
+description: Myhome.internal, Trusted domain
+dc: myhome
+o: myhome.internal
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+
+#Subtree for users
+dn: ou=Users, dc=myhome, dc=internal
+ou: Users
+description: myhome.internal Users
+objectClass: OrganizationalUnit
+
+#Subtree for Groups
+dn: ou=Groups,dc=myhome,dc=internal
+ou: Groups
+objectClass: organizationalUnit
+
+#Subtree for System accounts
+dn: ou=System,dc=myhome,dc=internal
+ou: System
+objectClass: organizationalUnit
+
+#Users
+#Matt butcher
+dn: uid=matt,ou=Users,dc=myhome,dc=internal
+ou: Users
+uid: matt
+cn: Matt Butcher
+sn: Butcher
+givenName: Matt
+displayName: Matt Butcher
+title: Systems Integrator
+description: Systems Integration and IT for Example.Com
+employeeType: Employee
+departmentNumber: 001
+employeeNumber: 001-08-98
+mail: mbutcher@example.com
+mail: matt@example.com
+roomNumber: 301
+telephoneNumber: +1 555 555 4321
+mobile: +1 555 555 6789
+st: Illinois
+l: Chicago
+street: 1234 Cicero Ave.
+# Home Info:
+homePhone: +1 555 555 9876
+homePostalAddress: 1234 home street $ Chicago, IL $ 60699-1234
+# Misc:
+userPassword: secret
+preferredLanguage: en-us,en-gb
+#Object Classes:
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+
+#LDAP Admin Group:
+dn: cn=LDAP ADmins, ou=Groups, dc=myhome,dc=internal
+cn: LDAP Admins
+ou: Groups
+description: Users who are LDAP administrators
+uniqueMember: uid=matt,dc=myhome,dc=internal
+objectClass: groupOfUniqueNames
+

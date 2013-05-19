@@ -1,0 +1,7 @@
+dn: uid=bjensen,dc=myhome,dc=internal
+cn: Barbara Jensen
+mail: bjensen@myhome.internal
+uid: bjensen
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson

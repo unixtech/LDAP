@@ -1,0 +1,14 @@
+# Olav Gjerde, people, home.com
+dn: cn=ldap3,ou=people,dc=myhome,dc=internal
+cn: ldap3
+sn: ldap3
+mail: ldap3@myhome.internal
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: ldap3
+uidNumber: 1200
+gidNumber: 1200
+userPassword: secret
+loginShell: /bin/bash
+homeDirectory: /home/ldap3

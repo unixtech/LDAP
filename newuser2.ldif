@@ -1,0 +1,20 @@
+
+### LDIF File that SUSE Creates
+dn: uid=ldap2,ou=Users,dc=myhome,dc=internal
+ou: Users
+cn: ldap2 User
+#gidNumber: 10001
+givenName: ldap2
+sn: Users
+#homeDirectory: /home/ldap2
+#loginshell: /bin/zsh
+#objectClass: top
+#objectClass: posixAccount
+userPassword: secret
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+
+sn: User
+uid: ldap2
+uidNumber: 10001
+
